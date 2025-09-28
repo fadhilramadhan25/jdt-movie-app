@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, Menu, X } from 'lucide-react';
 import { Avatar } from '../Avatar';
-import { useToken } from '../../hooks/useToken';
 
 /**
  * Komponen Navbar untuk aplikasi GENFLIX.
@@ -21,7 +20,6 @@ export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
-  const { logout } = useToken();
 
 
   useEffect(() => {
@@ -85,7 +83,6 @@ export default function Navbar() {
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
 
-          <button onClick={logout} className='rounded-4xl px-3 py-1 bg-red-500'>Logout</button>
         </div>
 
         {/* Mobile menu */}
