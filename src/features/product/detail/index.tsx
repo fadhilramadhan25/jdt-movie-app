@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import  { useEffect } from "react";
-=======
 import { useEffect } from "react";
->>>>>>> 1f1812751d52970a61072bc169f5bb69bb70eb7d
-
 import { useDetail } from "../../../hooks/product/useDetail";
 import { useForm } from "react-hook-form";
 import {

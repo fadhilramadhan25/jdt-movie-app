@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 1f1812751d52970a61072bc169f5bb69bb70eb7d
 import { useLocation } from "react-router";
 import { Hash } from "../../constants";
 import Detail from "./detail";
