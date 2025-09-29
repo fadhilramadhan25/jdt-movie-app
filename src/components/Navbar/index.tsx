@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, Menu, X } from 'lucide-react';
 import { Avatar } from '../Avatar';
+import avatarImage from '../../img/image.png'
 
 /**
  * Komponen Navbar untuk aplikasi GENFLIX.
@@ -71,7 +72,7 @@ export default function Navbar() {
             <Avatar
               square
               size='w-8 h-8'
-              src='src/img/image.png'
+              src={avatarImage}
             />
           </div>
           
